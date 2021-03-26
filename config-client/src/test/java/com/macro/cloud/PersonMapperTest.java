@@ -1,7 +1,7 @@
 package com.macro.cloud;
 
-import io.renren.modules.Person;
-import io.renren.modules.PersonMapper;
+import io.renren.modules.entity.Person;
+import io.renren.modules.mapper.PersonMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +27,5 @@ public class PersonMapperTest {
         System.out.println(personMapper.listCount());
     }
 
-    @Test
-    public void findPersonByIdTest() {
-        System.out.println(personMapper.findPersonById(10001));
-    }
+
 }
